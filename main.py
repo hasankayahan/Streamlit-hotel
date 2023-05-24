@@ -26,7 +26,7 @@ if page == "Prediction":
     from joblib import load
 
     # Modelin tam yolunu kullanarak modeli yükleyin
-    model = lgb.Booster(model_file='C:\\Users\\hasan\\PycharmProjects\\introductionToDataScience\\lgbm_model.txt')
+    model = lgb.Booster(model_file='lgbm_model.txt')
 
 
 
