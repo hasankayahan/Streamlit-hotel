@@ -6,3 +6,7 @@ pandas-profiling
 seaborn
 streamlit_pandas_profiling
 pandas-profiling
+LightGBM
+
+
+
