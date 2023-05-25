@@ -26,7 +26,7 @@ if page == "Prediction":
     from joblib import load
 
     # Modelin tam yolunu kullanarak modeli yükleyin
-    model = lgb.Booster(model_file='C:\\Users\hasan\\PycharmProjects\\introductionToDataScience\\lgbm_model.txt')
+    model = lgb.Booster(model_file='lgbm_model.txt')
 
 
 
@@ -362,26 +362,6 @@ else:
         image_url = "https://r.resimlink.com/2OpMeV7I9.png"
         st.image(image_url, use_column_width=True)
 
-
-    import base64
-
-    st.title("Contact")
-
-    # ... Diğer içerikler ...
-
-    # PDF dosyasını ekleyin
-    pdf_path = "C:\\Users\\hasan\\PycharmProjects\\introductionToDataScience\\Proje\\Siyah Beyaz Modern Teknoloji Şirketi Logosu-2.pdf"
-    pdf_file = open(pdf_path, 'rb')
-    pdf_bytes = pdf_file.read()
-
-    # Seçenek düğmesiyle PDF'nin indirme bağlantısını oluşturun
-    show_pdf = st.checkbox("PDF Dosyasını Göster")
-
-    if show_pdf:
-        st.markdown("### PDF Dosyası:")
-        b64_pdf = base64.b64encode(pdf_bytes).decode('latin-1')
-        href = f'<a href="data:application/pdf;base64,{b64_pdf}" download="Siyah Beyaz Modern Teknoloji Şirketi Logosu-2.pdf">PDF İndir</a>'
-        st.markdown(href, unsafe_allow_html=True)
 
 
 if __name__ == '__user_input_features__':
